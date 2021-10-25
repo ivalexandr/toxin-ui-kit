@@ -1,0 +1,10 @@
+@import "~normalize.css/normalize.css";
+@import "~reset-css/sass/reset.scss";
+
+@import "./pages/colors_and_types/style";
+@import "./fonts";
+
+body{
+  font-family: 'Montserrat';
+  font-size: 19px;
+}
