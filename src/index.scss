@@ -1,10 +1,23 @@
 @import "~normalize.css/normalize.css";
 @import "~reset-css/sass/reset.scss";
+@import "./scss/variables";
+@import "./scss/mixins";
+@import "./fonts";
+
+
 
 @import "./pages/colors_and_types/style";
-@import "./fonts";
+
 
 body{
   font-family: 'Montserrat';
   font-size: 19px;
+}
+.container{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.outer-container{
+  max-width: 1440px;
+  margin: 0 auto;
 }

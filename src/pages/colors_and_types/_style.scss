@@ -1,0 +1,117 @@
+.c-and-t{
+  &__header{
+    padding: 20px 0 0 20px;
+    margin-bottom: 64px;
+  }
+  &__main{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__colors{
+    display: flex;
+    flex-direction: column;
+  }
+  &__texts{
+    flex: 0 1 455px;
+    margin-top: 2px;
+  }
+}
+.color-block{
+  display: flex;
+  align-items: center;
+  &:not(:last-child){
+    margin-bottom: 20px;
+  }
+  &__square{
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-right: 40px;
+    &.dark100{
+      background-color: $darkShade100;
+    }
+    &.dark75{
+      background-color: $darkShade75;
+    }
+    &.dark50{
+      background-color: $darkShade50;
+    }
+    &.dark25{
+      background-color: $darkShade25;
+    }
+    &.dark5{
+      background-color: $darkShade5;
+    }
+    &.purple{
+      background-color: $purple;
+    }
+    &.green{
+      background-color: $green;
+    }
+  }
+  &__text{
+    display: flex;
+    flex-direction: column;
+  }
+  &__title{
+    margin-bottom: 10px;
+    font-size: 19px;
+    color:$darkShade100;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+  }
+  &__color{
+    font-size: 19px;
+    font-weight: 400;
+  }
+}
+.text-item{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 53px;
+  &:nth-child(1){
+    margin-bottom: 53px;
+  }
+  &:nth-child(2){
+    max-width: 368px;
+  }
+  &:nth-child(3){
+    align-items: center;
+  }
+  &:nth-child(4){
+    max-width: 367px;
+  }
+  &__tag{
+    font-size: 24px;
+    color:$darkShade25;
+    font-weight: 400;
+    margin-right: 30px;
+    &.h2{
+      margin-right: 31px;
+      font-size: 19px;
+    }
+    &.h3{
+      font-size: 12px;
+      margin-left: 12px;
+    }
+    &.body{
+      font-size: 14px;
+      margin-left: -8px;
+    }
+  }
+  &__title{
+    line-height: 1.2;
+    &.title{
+      @include font_for_section_title;
+    }
+    &.widget--title{
+      @include font_for_widget_title;
+    }
+    &.label{
+      @include font_for_label;
+    }
+    &.body{
+      @include font_for_body;
+    }
+  }
+}
