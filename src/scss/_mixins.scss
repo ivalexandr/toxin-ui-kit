@@ -1,0 +1,26 @@
+@mixin font_for_section_title {
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  font-size: 24px;
+  color:$darkShade100;
+}
+@mixin font_for_widget_title{
+  letter-spacing: 0.3px;
+  color:$darkShade100;
+  font-weight: 700;
+  font-size: 19px;
+}
+@mixin font_for_label{
+  letter-spacing: 0.3px;
+  color:$darkShade100;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+@mixin font_for_body{
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color:$darkShade75;
+  font-weight: 400;
+  font-size: 14px;
+}

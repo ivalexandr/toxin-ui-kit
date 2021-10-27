@@ -1,6 +1,7 @@
 @import "~normalize.css/normalize.css";
 @import "~reset-css/sass/reset.scss";
 @import "./scss/variables";
+@import "./scss/mixins";
 @import "./fonts";
 
 
@@ -13,7 +14,7 @@ body{
   font-size: 19px;
 }
 .container{
-  max-width: 1132px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 .outer-container{
