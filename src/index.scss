@@ -2,13 +2,17 @@
 @import "~reset-css/sass/reset.scss";
 @import "./scss/variables";
 @import "./scss/mixins";
+@import "./scss/main";
 @import "./fonts";
 
-
-
+//-------Pages styles-----------
 @import "./pages/colors_and_types/style";
+@import "./pages/form_elements/style";
 
+//------Components styles--------
+@import "./components/TextField/style";
 
+//-----Main styles---------------
 body{
   font-family: 'Montserrat';
   font-size: 19px;

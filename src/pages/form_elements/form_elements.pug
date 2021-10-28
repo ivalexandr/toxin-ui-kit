@@ -1,0 +1,12 @@
+include ../../components/TextField/TextField
+section.form-elements 
+  .outer-container
+    .header
+      img.logo(src="assets/img/logo.svg", alt="logo")
+    .container 
+      .form-elements__inputs 
+        .form-elements__fields
+          +TextField('Text Field', 'Email', 'text-default', 'Default')
+          +TextField('Text Field', 'Email', 'text-default', 'Hover / Focus', 'This is pretty awesome', 'active')
+        .form-elements__btns 
+        .form-elements__pag

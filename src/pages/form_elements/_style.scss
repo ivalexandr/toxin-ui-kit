@@ -1,0 +1,11 @@
+.form-elements{
+  &__inputs{
+    display: flex;
+  }
+  &__fields{
+    flex:0 1 320px;
+    & > *:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+}
