@@ -1,0 +1,177 @@
+@import "~air-datepicker/air-datepicker.css";
+.datepicker-range{
+  &__container{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__label{
+    @include font_for_label;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &:after{
+      content:'';
+      background-image:url('./components/DatePickerRange/arrow-dropdown.svg');
+      background-repeat:no-repeat;
+      background-position: center center;
+      display: block;
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      top: 75%;
+      transform:translateY(-70%);
+      right: 0;
+    }
+    input{
+        position: relative;
+        margin-top: 5px;
+        border-radius:4px;
+        border:1px solid $darkShade25;
+        padding: 13px 15px;
+        border-radius: 4px;
+        transition: border .2s linear;
+        @include font_for_body;
+        &::placeholder{
+          font-size: 14px;
+          color:$darkShade25;
+        }
+        &:focus{
+          outline: none;
+          border:1px solid $darkShade50;
+        }
+        &:hover{
+          border:1px solid $darkShade50;
+        }
+    }
+  }
+  &__picker{
+    width: calc(50% - 10px);
+  }
+}
+.air-datepicker{
+  font-family: 'Montserrat';
+  border-radius:4px;
+  box-shadow: 0px 10px 20px $darkShade5;
+  border: 1px solid $darkShade25;
+  padding: 20px;
+  width: 320px;
+  box-sizing: border-box;
+  &--pointer{
+    display: none;
+  }
+  &-nav--action[data-action="prev"]{
+    background-image: url('./components/DatePickerRange/arrow_back.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    &:hover{
+      background-image: url('./components/DatePickerRange/arrow_back.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      box-shadow:rgba(0, 0, 0, 0.7);
+    }
+    svg{
+      visibility: hidden;
+    }
+  }
+  &-nav--action[data-action="next"]{
+    background-image: url('./components/DatePickerRange/arrow_forward.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    &:hover{
+      background-image: url('./components/DatePickerRange/arrow_forward.svg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      box-shadow:rgba(0, 0, 0, 0.7);
+    }
+    svg{
+      visibility: hidden;
+    }
+  }
+  &-nav{
+    border-bottom: none;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  &--content{
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  &-nav--title{
+    @include font_for_widget_title();
+    i {
+      color:$darkShade100;
+    }
+  }
+  &-body--day-names{
+    & > *{
+      width: 40px;
+      height: 40px;
+      font-size: 12px;
+      color:$purple;
+      font-weight: bold;
+      text-transform: none;
+    }
+  }
+  &-body--cells{
+    & > *{
+      width: 40px;
+      height: 40px;
+      font-size: 12px;
+      color:$darkShade50;
+      border-radius: 50%;
+    }
+    &.-months-{
+      justify-content: center;
+    }
+  }
+  &-cell{
+    &.-day-{
+      &.-current-{
+        background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+        color:#fff;
+        font-weight: bold;
+      }
+      &.-selected-{
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        font-weight: bold;
+        color:#fff;
+      }
+      &.-disabled-{
+        color:$darkShade25;
+      }
+    }
+    &.-month-{
+      justify-self: center;
+    }
+    &.-year-{
+      justify-self: center;
+    }
+  }
+  &--buttons{
+    border-top: none;
+    padding: 0;
+    button{
+      padding: 0;
+      &:hover{
+        background-color: #fff;
+      }
+      span{
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+        color:$purple;
+      }
+      &:nth-child(1){
+        span{
+          justify-content: flex-start;
+        }
+      }
+      &:nth-child(2){
+        span{
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}

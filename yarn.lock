@@ -1192,6 +1192,11 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
+air-datepicker@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/air-datepicker/-/air-datepicker-3.0.1.tgz#a01b780b536d5ece709093bf699135a29c35a733"
+  integrity sha512-Pv6SN8FHGYpsnoaOq7uSpb/8iu61Fyzo3VqeXTPWmnI4Ctk78xTnoI0oZk5l8sJB8I0vO+3Bu2ISshBVJNnlPg==
+
 ajv-keywords@^3.5.2:
   version "3.5.2"
   resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.5.2.tgz#31f29da5ab6e00d1c2d329acf7b5929614d5014d"
@@ -3313,11 +3318,6 @@ imagemin-svgo@^10.0.0:
   dependencies:
     is-svg "^4.3.1"
     svgo "^2.5.0"
-
-imask@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/imask/-/imask-6.2.2.tgz#c72c0ce9a52f57539ecdc264eccc2407d20e13b5"
-  integrity sha512-oREITqngsjD0YxO62UpVQSxLNjIcb/mNO9hX2F8xQ282Kj3X9KXEAobipbUXz5R5NgtiL6nOPrWwo+AnLuz5AQ==
 
 import-lazy@^3.1.0:
   version "3.1.0"

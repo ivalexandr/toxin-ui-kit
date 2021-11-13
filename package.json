@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "imask": "^6.2.2",
+    "air-datepicker": "^3.0.1",
     "inputmask": "^5.0.6",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",

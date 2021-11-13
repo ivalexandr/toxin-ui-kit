@@ -1,6 +1,7 @@
 include ../../components/TextField/TextField
 include ../../components/DropDown/DropDown
 include ../../components/MaskedTextField/MaskedTextField
+include ../../components/DatePickerRange/DatePickerRange
 section.form-elements 
   .outer-container
     .header
@@ -11,6 +12,7 @@ section.form-elements
           +TextField('Text Field', 'Email', 'text-default', 'Default')
           +TextField('Text Field', 'Email', 'text-default', 'Hover / Focus', 'This is pretty awesome', 'active')
           +DropDown('dropdown')
-          +MaskedTextField('text', 'masked text field') 
+          +MaskedTextField('text', 'masked text field')
+          +DatePickerRange('datepicker-range', 'date Dropdown', 'date Dropdown')
         .form-elements__btns 
         .form-elements__pag
