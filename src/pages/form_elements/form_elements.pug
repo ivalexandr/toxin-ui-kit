@@ -1,4 +1,5 @@
 include ../../components/TextField/TextField
+include ../../components/DropDown/DropDown
 section.form-elements 
   .outer-container
     .header
@@ -8,5 +9,6 @@ section.form-elements
         .form-elements__fields
           +TextField('Text Field', 'Email', 'text-default', 'Default')
           +TextField('Text Field', 'Email', 'text-default', 'Hover / Focus', 'This is pretty awesome', 'active')
+          +DropDown('dropdown')
         .form-elements__btns 
         .form-elements__pag

@@ -5,14 +5,8 @@
 @import "./scss/main";
 @import "./fonts";
 
-//-------Pages styles-----------
-@import "./pages/colors_and_types/style";
-@import "./pages/form_elements/style";
 
-//------Components styles--------
-@import "./components/TextField/style";
-
-//-----Main styles---------------
+//-----Base styles---------------
 body{
   font-family: 'Montserrat';
   font-size: 19px;
@@ -25,3 +19,12 @@ body{
   max-width: 1440px;
   margin: 0 auto;
 }
+
+//-------Pages styles-----------
+@import "./pages/colors_and_types/style";
+@import "./pages/form_elements/style";
+
+//------Components styles--------
+@import "./components/DropDown/style";
+@import "./components/TextField/style";
+
