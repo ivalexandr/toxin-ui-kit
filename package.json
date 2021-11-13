@@ -33,6 +33,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "imask": "^6.2.2",
+    "inputmask": "^5.0.6",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
     "reset-css": "^5.0.1"

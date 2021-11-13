@@ -1,0 +1,27 @@
+.masked-text-field{
+  display: flex;
+  flex-direction: column;
+  &__label{
+    @include font_for_label;
+    margin-bottom: 5px;
+  }
+  &__input{
+    border-radius:4px;
+    border:1px solid $darkShade25;
+    padding: 13px 15px;
+    border-radius: 4px;
+    transition: border .2s linear;
+    @include font_for_body;
+    &::placeholder{
+      font-size: 14px;
+      color:$darkShade25;
+    }
+    &:focus{
+      outline: none;
+      border:1px solid $darkShade50;
+    }
+    &:hover{
+      border:1px solid $darkShade50;
+    }
+  }
+}
