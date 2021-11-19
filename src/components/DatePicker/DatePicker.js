@@ -3,7 +3,6 @@ import localeRu from 'air-datepicker/locale/ru'
 
 const DatePickerRangeInit = (selector) => {
   let dpMin, dpMax
-
   const button = {
     content: 'применить',
     className: 'custom-button-classname',
@@ -11,7 +10,6 @@ const DatePickerRangeInit = (selector) => {
         dp.hide()
     }
 }
-
   dpMin = new AirDatepicker(`${selector} [data-picker="datapickerFrom"]`,{
     locale:localeRu,
     onSelect({date}) {
@@ -24,7 +22,6 @@ const DatePickerRangeInit = (selector) => {
   },
   buttons:['clear', button]
 })
-
   dpMax = new AirDatepicker(`${selector} [data-picker="datapickerTo"]`,{
     locale:localeRu,
     onSelect({date}) {
@@ -37,7 +34,13 @@ const DatePickerRangeInit = (selector) => {
   },
   buttons:['clear', button]
 })
-
 }
 
-export { DatePickerRangeInit }
+const DatePickerFilterInit = (selector) => {
+  return new AirDatepicker(`${selector} [data-picker="datepicker-filter"]`, {
+    range: true,
+    multipleDatesSeparator:'-',
+  })
+}
+
+export { DatePickerRangeInit, DatePickerFilterInit }
