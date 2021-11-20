@@ -15,7 +15,8 @@ section.form-elements
           +DropDown('dropdown')
           +MaskedTextField('text', 'masked text field')
           +DatePickerRange('datepicker-range', 'date Dropdown', 'date Dropdown')
-          +DatePickerFilter('datepicker-filter', 'filter date dropdown', 'Выберите дату')
-          +SubsTextField('Email', 'subscription text field')
+          .form-elements__fields--small
+            +DatePickerFilter('datepicker-filter', 'filter date dropdown', 'Выберите дату')
+            +SubsTextField('Email', 'subscription text field')
         .form-elements__btns 
         .form-elements__pag

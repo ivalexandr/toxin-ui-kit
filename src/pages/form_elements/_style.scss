@@ -5,6 +5,14 @@
   &__fields{
     flex:0 0 320px;
     max-width: 320px;
+    &--small{
+      width: 266px;
+      display: flex;
+      flex-direction: column;
+      & > :first-child{
+        margin-bottom: 20px;
+      }
+    }
     & > *:not(:last-child){
       margin-bottom: 20px;
     }
