@@ -2,10 +2,10 @@ mixin CheckboxList(title, arrayOfItems)
   .checkbox-list
     span.checkbox-list__title=title
     ul.checkbox-list__list
-      each val in arrayOfItems
+      each val,index in arrayOfItems
         li.checkbox-list__item
           label.checkbox-list__label
-            input.checkbox-list__input(type="checkbox", name="checkbox-list" value=val)
+            input.checkbox-list__input(type="checkbox", name=`checkbox-item-${index}` value=val)
             span.checkbox-list__box
               span.checkbox-list__gradient
             span.checkbox-list__text=val

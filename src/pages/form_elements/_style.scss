@@ -18,7 +18,15 @@
       margin-bottom: 20px;
     }
   }
+  &__btns{
+    & > *:not(:last-child){
+      margin-bottom: 40px;
+    }
+  }
   &__checkboxes--small{
     width: 222px;
+  }
+  &__radio--small{
+    width: 220px;
   }
 }
