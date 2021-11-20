@@ -1,0 +1,6 @@
+include ./assets/Arrow
+mixin SubsTextField(placeholder, label)
+  label.subscription-field
+    span.subscription-field__title=label
+    +ArrowForward
+    input.subscription-field__input(type="text", name="subscription-field" placeholder=placeholder)
