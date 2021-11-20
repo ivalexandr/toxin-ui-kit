@@ -39,7 +39,13 @@ const DatePickerRangeInit = (selector) => {
 const DatePickerFilterInit = (selector) => {
   return new AirDatepicker(`${selector} [data-picker="datepicker-filter"]`, {
     range: true,
-    multipleDatesSeparator:'-',
+    multipleDatesSeparator:' - ',
+    dateFormat(date){
+      return date.toLocaleString('ru', {
+        day:'numeric',
+        month:'short'
+      })
+    }
   })
 }
 
