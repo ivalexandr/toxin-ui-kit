@@ -5,7 +5,7 @@ mixin CheckboxList(title, arrayOfItems)
       each val in arrayOfItems
         li.checkbox-list__item
           label.checkbox-list__label
-            input.checkbox-list__input(type="checkbox", name="checkbox-list")
+            input.checkbox-list__input(type="checkbox", name="checkbox-list" value=val)
             span.checkbox-list__box
               span.checkbox-list__gradient
             span.checkbox-list__text=val
