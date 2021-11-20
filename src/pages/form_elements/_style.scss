@@ -5,6 +5,7 @@
   &__fields{
     flex:0 0 320px;
     max-width: 320px;
+    margin-right: 126px;
     &--small{
       width: 266px;
       display: flex;
@@ -16,5 +17,8 @@
     & > *:not(:last-child){
       margin-bottom: 20px;
     }
+  }
+  &__checkboxes--small{
+    width: 222px;
   }
 }
