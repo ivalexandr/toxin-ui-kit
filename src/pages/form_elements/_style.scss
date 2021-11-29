@@ -29,4 +29,15 @@
   &__radio--small{
     width: 220px;
   }
+  &__toggle_btn{
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    & > *:not(:last-child){
+      margin-bottom: 10px;
+    }
+    &--title{
+      @include font_for_label;
+    }
+  }
 }

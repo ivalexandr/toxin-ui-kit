@@ -5,6 +5,7 @@ include ../../components/DatePicker/DatePicker
 include ../../components/SubsTextField/SubsTextField
 include ../../components/CheckboxList/CheckboxList
 include ../../components/RadioButtonsList/RadioButtonsList
+include ../../components/ToggleButton/ToggleButton
 
 section.form-elements 
   .outer-container
@@ -27,4 +28,8 @@ section.form-elements
               +CheckboxList('Checkbox Buttons', ['Можно курить', 'Можно с питомцами', 'Можно пригласить гостей (до 10 человек)'])
             .form-elements__radio--small
               +RadioButtonsList('Radio Buttons', ['Мужчина', 'Женщина'])
+            .form-elements__toggle_btn
+              h2.form-elements__toggle_btn--title Toggle
+              +ToggleButton('toggle-chk', 'Получать спецпредложения', true)
+              +ToggleButton('toggle-chk', 'Получать спецпредложения', false)
         .form-elements__pag
