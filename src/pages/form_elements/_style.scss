@@ -40,4 +40,17 @@
       @include font_for_label;
     }
   }
+  &__like_btn{
+    
+    &--title{
+      @include font_for_label;
+      margin-bottom: 16px;
+    }
+    &--list{
+      display: flex;
+      & > *:not(:last-child){
+        margin-right: 13px;
+      }
+    }
+  }
 }
