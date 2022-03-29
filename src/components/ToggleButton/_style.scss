@@ -1,0 +1,54 @@
+.toggle-button{
+  display: flex;
+  align-items: center;
+  
+  &__input{
+    appearance: none;
+    &:checked + .toggle-button__box {
+        &:after{
+          left:calc(40px - 16px);
+          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        }
+        &:before{
+          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        }
+    }
+  }
+  &__text{
+    @include font_for_body;
+  }
+  &__box{
+    width: 40px;
+    height: 20px;
+    position:relative;
+    background:#fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor:pointer;
+    
+    &:before{
+      content: '';
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+      background:$darkShade25;
+      z-index: -1;
+      border-radius: 11px;
+    }
+    &:after{
+      content:'';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background:$darkShade25;
+      top: 50%;
+      transform: translateY(-50%);
+      left:4px;
+      transition: .2s linear all;
+    }
+  }
+}

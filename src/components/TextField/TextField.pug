@@ -1,0 +1,6 @@
+mixin TextField(label, placeholder,name, type, text, dataAttr)
+  label.text-field(data-active=dataAttr)
+    span.text-field__label 
+      span.text-field__title=label
+      span.text-field__type=type
+    input.text-field__input(type="text", name=name, placeholder=placeholder, value=text)

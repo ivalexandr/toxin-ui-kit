@@ -1,0 +1,10 @@
+mixin RadioButtonsList(title, arrayOfItems)
+  .radio-list
+    span.radio-list__title=title
+    ul.radio-list__list
+      each val in arrayOfItems
+        li.radio-list__item 
+          label.radio-list__label
+            input.radio-list__input(type="radio" name="radio-item" value=val)
+            span.radio-list__box 
+            span.radio-list__text=val

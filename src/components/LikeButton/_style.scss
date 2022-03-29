@@ -1,0 +1,51 @@
+.like-button{
+  display: flex;
+  &__container{
+    transition: all .3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    border:1px solid $darkShade25;
+    min-width: 38px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 0 1px;
+  }
+  &__heart{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    transition: all .3s linear;
+    svg{
+      path{
+        fill:$darkShade25;
+      }
+    }
+  }
+  &__counter{
+    font-size: 10px;
+    line-height: 1;
+    color:$darkShade25;
+    transition: all .3s linear;
+  }
+  &--active{
+    .like-button__container{
+      border-color: $purple;
+    }
+    .like-button__heart{
+      svg{
+        path{
+          fill:$purple;
+        }
+      }
+    }
+    .like-button__counter{
+      color:$purple;
+    }
+  }
+}

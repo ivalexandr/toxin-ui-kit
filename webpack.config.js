@@ -23,6 +23,11 @@ module.exports = {
   },
   plugins:[
     new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'src', 'colors_and_fonts.pug'),
+      filename:'colors_and_fonts.html',
+      minify: false
+    }),
+    new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'index.pug'),
       filename:'index.html',
       minify: false

@@ -1,0 +1,56 @@
+.form-elements{
+  &__inputs{
+    display: flex;
+  }
+  &__fields{
+    flex:0 0 320px;
+    max-width: 320px;
+    margin-right: 126px;
+    &--small{
+      width: 266px;
+      display: flex;
+      flex-direction: column;
+      & > :first-child{
+        margin-bottom: 20px;
+      }
+    }
+    & > *:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+  &__btns{
+    & > *:not(:last-child){
+      margin-bottom: 40px;
+    }
+  }
+  &__checkboxes--small{
+    width: 222px;
+  }
+  &__radio--small{
+    width: 220px;
+  }
+  &__toggle_btn{
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+    & > *:not(:last-child){
+      margin-bottom: 10px;
+    }
+    &--title{
+      @include font_for_label;
+    }
+  }
+  &__like_btn{
+    
+    &--title{
+      @include font_for_label;
+      margin-bottom: 16px;
+    }
+    &--list{
+      display: flex;
+      & > *:not(:last-child){
+        margin-right: 13px;
+      }
+    }
+  }
+}

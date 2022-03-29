@@ -1,0 +1,33 @@
+.subscription-field{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &__title{
+    @include font_for_label;
+  }
+  &__input{
+    border:1px solid $darkShade25;
+    padding: 13px 15px;
+    border-radius: 4px;
+    transition: border .2s linear;
+
+    margin-top: 5px;
+    @include font_for_body;
+    &::placeholder{
+      font-size: 14px;
+      color:$darkShade25;
+    }
+    &:focus{
+      outline: none;
+      border:1px solid $darkShade50;
+    }
+    &:hover{
+      border:1px solid $darkShade50;
+    }
+  }
+  &__arrow{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+  }
+}
